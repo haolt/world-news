@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
+import { basePath } from '../../constants/basePath';
 import './styles.scss';
 import Header from '../../components/Header';
 import HomePage from '../HomePage';
@@ -12,13 +13,13 @@ const App = () => (
   <React.Fragment>
     <Header />
     <Switch>
-      <Route exact path="/">
+      <Route exact path={`${ basePath }/`}>
         <HomePage/>
       </Route>
-      <Route exact path="/story">
+      <Route exact path={`${ basePath }/story`}>
         <StoryPage />
       </Route>
-      <Route path="/story/world-news">
+      <Route path={`${ basePath }/story/world-news`}>
         <WorldNewsPage />
       </Route>
       <NotFound />

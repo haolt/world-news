@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faCompass } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faCompass, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { basePath } from '../../constants/basePath';
 import Avatar from '../../assets/images/avatar.png';
 import Social2 from '../../assets/images/social2.png';
 import Social3 from '../../assets/images/social3.png';
@@ -21,21 +20,21 @@ export default class Sidebar extends Component {
         </label>
         <ul className="routes routes-sb">
           <li>
-            <NavLink className="routes__item--sb" to="/">
+            <NavLink className="routes__item--sb" to={`${ basePath }/`}>
               <FontAwesomeIcon icon={ faHome } />
               &nbsp;
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className="routes__item--sb" to="/story/world-news">
+            <NavLink className="routes__item--sb" to={`${ basePath }/story/world-news`} >
               <FontAwesomeIcon icon={ faCompass } />
               &nbsp;
               World News
             </NavLink>
           </li>
           <li>
-            <NavLink className="routes__item--sb" to="/contact">
+            <NavLink className="routes__item--sb" to={`${ basePath }/contact`} >
               <FontAwesomeIcon icon={ faEnvelope } />
               &nbsp;
               Contact

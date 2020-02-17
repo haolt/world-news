@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { basePath } from '../../constants/basePath';
 import Avatar from '../../assets/images/avatar.png';
 import './styles.scss';
 import Sidebar from '../Sidebar';
@@ -17,10 +18,10 @@ export default class Header extends Component {
         <input type="checkbox" id="sidebar-toggle" />
         <Sidebar />
         <h1>
-          <Link to="/" className="logo">Logo</Link>
+          <Link to={`${basePath}/`} className="logo">Logo</Link>
         </h1>
         <Menu />
-        <Link to="/profile" className="profile-wrap">
+        <Link to={`${basePath}/profile`} className="profile-wrap">
           <img alt="avatar" src={ Avatar } className="profile"/>
         </Link>
       </header>

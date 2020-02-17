@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { basePath } from '../../constants/basePath';
 import './styles.scss';
 
 const NewsItemCustom = ({
@@ -12,7 +13,7 @@ const NewsItemCustom = ({
   time
 }) => {
   return (
-    <Link to="/">
+    <Link to={`${ basePath }/>`}>
       <article className="news-item--custom">
         { img && (
           <div className="news-item--custom__img">

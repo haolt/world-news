@@ -1,23 +1,25 @@
+import { basePath } from '../../constants/basePath';
+
 export const routes1 = [
   {
     id: 1,
     name: 'Home',
-    path: '/'
+    path: `${basePath}/`
   },
   {
     id: 2,
-    name: 'Discovery',
-    path: '/discovery'
+    name: 'World News',
+    path: `${basePath}/story/world-news`
   },
   {
     id: 3,
     name: 'Story',
-    path: '/story'
+    path: `${basePath}/story`
   },
   {
     id: 4,
     name: 'Contact',
-    path: '/contact'
+    path: `${basePath}/contact`
   }
 ];
 
@@ -25,22 +27,22 @@ export const routes2 = [
   {
     id: 1,
     name: 'About',
-    path: '/about'
+    path: `${basePath}/about`
   },
   {
     id: 2,
     name: 'Helps',
-    path: '/helps'
+    path: `${basePath}/helps`
   },
   {
     id: 3,
     name: 'Terms',
-    path: '/terms'
+    path: `${basePath}/terms`
   },
   {
     id: 4,
     name: 'Guidelines',
-    path: '/guidelines'
+    path: `${basePath}/guidelines`
   }
 ];
 
@@ -48,21 +50,21 @@ export const routes3 = [
   {
     id: 1,
     name: 'Testimonials',
-    path: '/testimonials'
+    path: `${basePath}/testimonials`
   },
   {
     id: 2,
     name: 'Advertise',
-    path: '/advertise'
+    path: `${basePath}/advertise`
   },
   {
     id: 3,
     name: 'Intergretion',
-    path: '/intergretion'
+    path: `${basePath}/intergretion`
   },
   {
     id: 4,
     name: 'Careers',
-    path: '/careers'
+    path: `${basePath}/careers`
   }
 ];

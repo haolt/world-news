@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { basePath } from '../../constants/basePath';
 import './styles.scss';
 
 const NewsItem = ({
@@ -14,7 +15,7 @@ const NewsItem = ({
   isTrending
 }) => {
   return (
-    <Link to="/">
+    <Link to={`${ basePath }/`}>
       <article className={`news-item ${ isTrending ? 'trending' : '' }`}>
         { img && (
           <div className="news-items__img">

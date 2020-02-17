@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import { basePath } from '../../constants/basePath';
 import './styles.scss';
 
 export default class WorldNewsHeading extends Component {
@@ -11,7 +12,7 @@ export default class WorldNewsHeading extends Component {
       <section className="world-news-heading d-flex">
         <ul className="breadcrumb">
           <li>
-            <Link to="/">
+            <Link to={`${ basePath }/`}>
               <FontAwesomeIcon icon={ faHome } />
               &nbsp;
               Home
@@ -19,7 +20,7 @@ export default class WorldNewsHeading extends Component {
           </li>
           &gt;
           <li>
-            <Link to="/story/world-news" className="active">
+            <Link to={`${ basePath }//story/world-news`} className="active">
               World news
             </Link>  
           </li>

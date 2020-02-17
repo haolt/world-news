@@ -1,0 +1,1 @@
+export const basePath = 'https://haolt.github.io/world-news';

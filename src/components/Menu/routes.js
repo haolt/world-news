@@ -1,34 +1,35 @@
 import Avatar from '../../assets/images/avatar.png';
+import { basePath } from '../../constants/basePath';
 
 export const routes = [
   {
     id: 1,
     name: 'Home',
     img: null,
-    path: '/'
+    path: `${basePath}/`
   },
   {
     id: 2,
     name: 'World News',
     img: null,
-    path: '/story/world-news'
+    path: `${basePath}/story/world-news`
   },
   {
     id: 3,
     name: 'Story',
     img: null,
-    path: '/story'
+    path: `${basePath}/story`
   },
   {
     id: 4,
     name: 'Contact',
     img: null,
-    path: '/contact'
+    path: `${basePath}/contact`
   },
   {
     id: 5,
     name: '',
     img: Avatar,
-    path: '/me'
+    path: `${basePath}/profile`
   },
 ];

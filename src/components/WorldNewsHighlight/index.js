@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { basePath } from '../../constants/basePath';
 import Avatar from '../../assets/images/avatar2.png';
 import Elephen from '../../assets/images/elephen.jpg';
 import './styles.scss';
@@ -12,7 +13,7 @@ export default class WorldNewsHighlight extends Component {
       <section className="world-news-highlight">
         <div className="row">
           <div className="col-md-4">
-            <Link to="/author" className="world-news-highlight__author">
+            <Link to={`${ basePath }/author`} className="world-news-highlight__author">
               <img src={ Avatar } alt="avatar" />
             </Link>
             <h3 className="world-news-highlight__title">
