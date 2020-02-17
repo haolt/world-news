@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-import { basePath } from '../../constants/basePath';
 import './styles.scss';
 
 export default class NotFound extends Component {
@@ -17,7 +16,7 @@ export default class NotFound extends Component {
         </Helmet>
         <section className="notfound">
           <h2 className="notfound__notice">Page was not found.
-            Return <Link to={`${ basePath }/`}>Home Page</Link>.
+            Return <Link to="/">Home Page</Link>.
           </h2>
         </section>
       </React.Fragment>

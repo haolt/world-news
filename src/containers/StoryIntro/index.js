@@ -1,28 +1,29 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faGlobeAmericas, faBook } from '@fortawesome/free-solid-svg-icons';
-import { basePath } from '../../constants/basePath';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
 import Avatar from '../../assets/images/avatar2.png';
 import './styles.scss';
 
 const StoryIntro = () => (
   <section className="story-intro-wrap">
     <div className="story-intro">
-      <Link to={`${ basePath }/story`}>
+      <Link to="/story">
         <h2 className="story-intro__title">
             Amazing place to America to visit
         </h2>
       </Link>
       <ul className="story-intro__categories">
         <li>
-          <Link to={`${ basePath }/story`}>
+          <Link to="/category">
             <FontAwesomeIcon icon={ faGlobeAmericas } />
             <span>Travel Guidelines</span>
           </Link>
         </li>
         <li>
-          <Link to={`${ basePath }/story/world-news`}>
+          <Link to="/story/world-news">
             <FontAwesomeIcon icon={ faBook } />
             <span>World News</span>
           </Link>
@@ -30,12 +31,12 @@ const StoryIntro = () => (
       </ul>
     </div>
     <div className="story-intro__author">
-      <Link to={`${ basePath }/story`} className="story-author">
+      <Link to="/author" className="story-author">
         <img src={ Avatar } alt="avatar" />
         by Steven Voorhees
       </Link>
     </div>
-    <Link to={`${ basePath }/story`} className="story-intro__next next-story">
+    <Link to="/story" className="story-intro__next next-story">
       <h3 className="next-story__title">
         Next story
         <FontAwesomeIcon icon={ faAngleRight } />

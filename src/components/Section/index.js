@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import { basePath } from '../../constants/basePath';
 import './styles.scss';
 import { Link } from 'react-router-dom';
 
@@ -15,10 +14,10 @@ const Section = ({ title, children, hasBorderBtm }) => (
     >
       <h2 className="section__title">{ title }</h2>
       <div className="section__navigate">
-        <Link to={`${ basePath }/`}>
+        <Link to="/">
           <FontAwesomeIcon icon={ faAngleLeft } />
         </Link>
-        <Link to={`${ basePath }/`}>
+        <Link to="/">
           <FontAwesomeIcon icon={ faAngleRight } className="active" />
         </Link>
       </div>
