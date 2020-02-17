@@ -1,0 +1,51 @@
+@import '../../constants/theme';
+
+.world-news-filter-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30em;
+  background: $white;
+  padding: 2em;
+  height: 100%;
+
+  .world-news-filter {
+    width: 100%;
+
+    &__group {
+
+      width: 100%;
+      margin: 2em 0;
+
+      label {
+        font-size: 1em;
+        font-weight: 600;
+        color: #202124;
+      }
+
+      input, select {
+        border: 2px solid lighten($navColor, 60%);;
+        color: $navColor;
+        border-radius: 5px;
+      }
+    }
+
+    &__btn {
+      background: $logoColor;
+      color: $white;
+      padding: 0.5em 3em;
+      text-transform: uppercase;
+      font-weight: 600;
+      outline: none;
+      border: 2px solid $logoColor;
+      border-radius: 3px;
+      transition: 0.2s;
+
+      &:hover {
+        background: $white;
+        color: $logoColor;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,97 @@
+@import '../../constants/theme';
+
+.story-intro-wrap {
+  background: url('../../assets/images/bird.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 35em;
+
+  .story-intro {
+
+    &__title {
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  
+    &__author {
+      position: absolute;
+      bottom: 2em;
+      left: 2em;
+      width: 25%;
+    }
+
+    &__categories {
+      display: flex;
+      justify-content: space-around;
+      
+      a {
+        color: $white;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: $font1;
+      }
+
+      span {
+        margin-left: 1em;
+      }
+    }
+  
+  }
+  
+  .story-author {
+    color: $white;
+    font-family: $font1;
+    font-weight: 600;
+    font-size: 0.9em;
+  
+    &:hover {
+      color: $white;
+    }
+  
+    img {
+      max-width: 25px;
+      border: 3px solid $white;
+      margin-right: 1em;
+      border-radius: 50%;
+    }
+  }
+
+  .next-story {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    width: 30%;
+    border: 2px solid lighten($white, 50%);
+    padding: 1em;
+    color: $white;
+    border-radius: 5px;
+
+    &__title {
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: 600;
+      color: $logoColor;
+      display: flex;
+      justify-content: space-between;
+
+      svg {
+        color: $white;
+      }
+    }
+
+    &__description {
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+  
+  }
+
+}

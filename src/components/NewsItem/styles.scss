@@ -1,0 +1,51 @@
+@import '../../constants/theme';
+
+.news-item {
+
+  padding: 1.5em 0;
+
+  &.trending {
+    background: $white;
+  }
+
+  &__category {
+    color: $logoColor;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    font-family: $font1;
+  }
+
+  &__title {
+    font-size: 1em;
+    font-weight: 600;
+    color: $titleColor;
+    padding-top: 1em;
+
+    &.trending {
+      padding: 1em 2em 0;
+    }
+  }
+
+  &__excerpt {
+    color: $txtColor;
+    font-family: $font1;
+    font-size: 0.9em;
+
+    &.trending {
+      padding: 0 2em;
+    }
+  }
+
+  &__time {
+    color: $txtColor;
+    font-size: 0.9em;
+    font-style: italic;
+
+    &.trending {
+      display: block;
+      padding: 0 2em;
+    }
+  }
+
+}

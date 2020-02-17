@@ -1,0 +1,96 @@
+@import '../../constants/theme';
+
+.navigation-mobile {
+    display: none;
+    opacity: 0;
+    width: 0;
+    transition: 0.25s;
+}
+
+input[type=checkbox]:checked ~ .navigation-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    background-color: $white;
+    opacity: 1;
+    width: 70%;
+    transition: 0.25s;
+}
+
+.label-toggle-logo {
+  font-size: 1.2em;
+  color: $logoColor;
+  font-family: $font1;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1em;
+  display: inline-block;
+  margin: 0;
+}
+
+.routes {
+
+  &.routes-sb {
+    padding: 1.5em;
+  }
+
+  &__item--sb {
+    color: lighten($navColor, 60%);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    display: block;
+    padding: 0.7em 0;
+    font-family: $font1;
+    cursor: pointer;
+  
+    &.active {
+      color: $navColor;
+    }
+  
+    svg {
+      margin-right: 0.5em;
+    }
+  
+    img {
+      max-width: 1.125em;
+    }
+  }
+}
+
+.footer-sidebar {
+  background: $bgFooter;
+  padding: 2em 0;
+
+  &__btw {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      color: $white;
+      font-size: 0.9em;
+    }
+  }
+
+  &__btm {
+    img {
+      width: 0.8em;
+      margin-right: 1em;
+    }
+
+    .social-media {
+      padding: 1em 2em;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+
+  .label-toggle, .navigation-mobile {
+    display: none;
+  }
+
+}

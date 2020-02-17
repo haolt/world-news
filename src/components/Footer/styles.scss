@@ -1,0 +1,61 @@
+@import '../../constants/theme';
+
+.footer {
+  background: $bgFooter;
+
+  .footer-logo {
+    color: $white;
+    font-size: 1em;
+  }
+
+  .routes__item {
+    color: $white;
+  }
+
+  .routes {
+    margin: 0 1em;
+    font-size: 0.9em;
+
+  }
+
+  .subscribe-letter {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 0.8em;
+      right: 1em;
+      color: $white;
+    }
+
+    input {
+      background: transparent;
+      border: 2px solid #ffffff52;
+      height: 2.7em;
+      font-size: 1em;
+    }
+
+    small {
+      color: $white;
+    }
+  }
+
+  .routes.social-media {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      margin-left: 1em;
+    }
+    
+    img {
+      width: 12px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: none;
+  }
+}

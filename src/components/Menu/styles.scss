@@ -1,0 +1,20 @@
+@import '../../constants/theme';
+
+.navigations__route {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  font-size: 0.9em;
+  line-height: 30px;
+  color: lighten($navColor, 50%);
+
+  :last-child {
+      padding: 0;
+      min-width: 25px;
+  }
+
+  &.active {
+    color: $navColor;
+  }
+}

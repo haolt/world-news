@@ -1,0 +1,29 @@
+@import '../../constants/theme';
+
+.story {
+
+  &__author {
+
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 25px;
+      margin-right: 5px;
+    }
+
+    span {
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+  }
+
+  &__excerpt {
+    font-size: 0.9em;
+    color: lighten($navColor, 50%);
+    font-style: italic;
+    line-height: 25px;
+  }
+
+}

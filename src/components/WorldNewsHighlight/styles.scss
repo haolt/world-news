@@ -1,0 +1,47 @@
+@import '../../constants/theme';
+
+.world-news-highlight {
+
+  padding: 2em 0;
+  border-top: 3px solid lighten($navColor, 70%);
+  border-bottom: 3px solid lighten($navColor, 70%);
+  margin: 1em 0;
+
+  &__quote {
+    
+    &--custom {
+      column-count: 2;
+    }
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  &__author {
+    img {
+      max-width: 30px;
+      border-radius: 50%;
+      margin: 1em 0;
+    }
+  }
+
+  &__title {
+    color: $navColor;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    font-family: $font1;
+  }
+
+  &__quote {
+    color: lighten($navColor, 50%);
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+
+  &__time {
+    display: block;
+    margin-top: 1em;
+  }
+}

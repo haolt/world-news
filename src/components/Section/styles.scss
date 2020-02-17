@@ -1,0 +1,29 @@
+@import '../../constants/theme';
+
+.section {
+  padding: 1em 0;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+
+    svg {
+      color: lighten($navColor, 50%);
+      margin: 0 0.3em;
+
+      &.active {
+        color: $navColor;
+      }
+    }
+  }
+
+  &__title {
+    color: $navColor;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $font1;
+    display: inline-block;
+  }
+}

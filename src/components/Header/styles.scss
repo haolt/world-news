@@ -1,0 +1,51 @@
+@import '../../constants/theme';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.label-toggle {
+  cursor: pointer;
+  display: block;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+.profile {
+  width: 25px;
+}
+
+.navigations {
+  display: none;
+}
+
+.logo {
+  color: $logoColor;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+
+  .navigations {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .profile-wrap {
+    display: none;
+  }
+
+}

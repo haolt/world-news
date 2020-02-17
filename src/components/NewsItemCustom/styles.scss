@@ -1,0 +1,41 @@
+@import '../../constants/theme';
+
+.news-item--custom {
+
+  position: relative;
+  
+  &__category {
+    font-size: 0.9em;
+    font-weight: 600;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  &__excerpt {
+    color: $white;
+    font-family: $font1;
+    font-size: 0.9em;
+  }
+
+  &__time {
+    color: $white;
+    font-size: 0.9em;
+    font-style: italic;
+  }
+
+}

@@ -1,0 +1,31 @@
+@import '../../constants/theme';
+
+.news-item {
+
+  &__category {
+    color: $logoColor;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
+  &__title {
+    font-size: 1em;
+    font-weight: 600;
+    color: $titleColor;
+  }
+
+  &__excerpt {
+    color: $txtColor;
+    font-family: $font1;
+    font-size: 0.9em;
+    margin: 0;
+  }
+
+  &__time {
+    color: $txtColor;
+    font-size: 0.9em;
+    font-style: italic;
+  }
+
+}

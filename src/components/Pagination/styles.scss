@@ -1,0 +1,22 @@
+@import '../../constants/theme';
+
+.pagination {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0.5em;
+      a {
+        display: inline-block;
+        padding: 0.5em;
+        font-family: $font1;
+        color: lighten($navColor, 50%);
+
+        &.active {
+          border-bottom: 4px solid $logoColor;
+          font-weight: 600;
+          color: $navColor;
+        }
+      }
+    }
+}
